@@ -6,6 +6,7 @@ This repo contains examples of ways to configure Maya Modules.
 - [gotchas](gotchas): This module shows examples of problems you may run into.
 - [order](order): This module shows how the name of a specifier controls the order env vars are populated.
 - [shelves](shelves): This module shows how to add a Maya Shelf in a module so it only shows up if the module is loaded and doesn't leave a broken shelf when the module is not loaded.
+- [user_setup](user_setup): This module shows using a userSetup.py file to run code on Maya start including loading plug-ins.
 
 
 # Installing
