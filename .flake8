@@ -1,0 +1,19 @@
+[flake8]
+ignore =
+    E203,
+    E501,
+    E722,
+    W503,
+    # Maya api doesn't follow these rules
+    N802,
+    N806,
+    N815,
+exclude =
+    tests/*
+    *.egg-info
+    *.pyc
+    .cache
+    .eggs
+    .git
+    .tox
+    __pycache__
