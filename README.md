@@ -4,6 +4,7 @@ This repo contains examples of ways to configure Maya Modules.
 
 - [features](features): This module attempts to create a working example of the majority of features Maya modules support. It is a good starting point for understanding what you can do with a module.
 - [gotchas](gotchas): This module shows examples of problems you may run into.
+- [order](order): This module shows how the name of a specifier controls the order env vars are populated.
 - [shelves](shelves): This module shows how to add a Maya Shelf in a module so it only shows up if the module is loaded and doesn't leave a broken shelf when the module is not loaded.
 
 
