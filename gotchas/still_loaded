@@ -1,0 +1,7 @@
++ StillLoadedSpecifier 1.0 .
+STILL_LOADED=yep
+
+# Maya reads every text file in a `MAYA_MODULE_PATH` directory even if they don't
+# have the `.mod` file extension. This can cause issues if you try to backup
+# a file or disable it by changing the file extension. You need to move the file
+# outside of this directory if you want to do that.
