@@ -104,3 +104,20 @@ You can change the default directory using Module Entry lines.
 - **[r]**: Recursive flag. By default, Maya ignores all sub-folders included in a module. If you want Maya to include all sub-folders, add [r] before the moduleFolder. This ignores hidden sub-directories and [extensions listed on this page](https://help.autodesk.com/view/MAYAUL/2024/ENU/?guid=Maya_SDK_Distributing_Maya_Plug_ins_DistributingUsingModules_ModuleDescriptionFiles_html).
 - **\<moduleFolder\>**: Name of the module folder you want to overwrite.
 - **overridePath**: The path to add. If you use a relative path it will be relative to the ModulePath defined in the specifier. You can use absolute paths but that will severely limit the portability of your module.
+
+#### Multiple Module Entry Paths
+
+Each Module Entry can store one file path. If you use a platform path separator
+it seems to respect the first path and ignore the rest. It also requires using
+the correct path separator for the current platform (`;` for windows, `:` for linux/mac).
+You can use the recursive flag to make all child directories available.
+Otherwise you can create a new specifier for each set of paths. This has been
+tested in Maya 2024 specifically with relative [module shelf icon paths](shelves/README.md).
+
+```
++ multiplePaths 1.0 .
+icons: src/icons
+
++ multiplePaths_b 1.0 .
+icons: src_a/icons
+```
